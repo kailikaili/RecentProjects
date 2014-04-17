@@ -75,7 +75,7 @@ New trend for future internet.
 * Java, rdf, owl
 
 
-### R code Samples
+## R code Samples
 
 In this part, I provided some simple r code examples.
 
