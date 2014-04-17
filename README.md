@@ -13,7 +13,14 @@ Thoese codes are only used to show some ideas. Please do not copy them for other
 * I'm not sure if it works or not, please contact me if you meet any problem. (sunny_0827@126.com)
 * To Run: please have a look at the begaining part in ReadMe.pdf file.
 
-### 
+### Gomoku
+* Don't know what is Gomoku? Don't worry, please google it.
+* The instructor held a competition on our Gomoku Agents in class and I got Top 3 (There were no battle between top 3).
+* Key points: -> How to design heuristic function?
+              -> How to speed up?
+* My agent is smart engouth to make a trade off between searching area and benefits. It will never spend more than 10 seconds to give a wonderful move. 
+* There are two players. You can try both. 
+* Don't you want to know how to design a smart game agent? Please have a look at the ReadMe.pdf file to find out your answers.
 
 
 ## NLP -- Natural Language Processing
