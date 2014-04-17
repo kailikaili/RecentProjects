@@ -1,7 +1,8 @@
 '''
 Created on Nov 15, 2013
 
-@author: Hebo
+@author: Kaili
+@more simple and stable
 '''
 import sys
 import random
