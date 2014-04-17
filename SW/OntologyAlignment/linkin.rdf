@@ -1,0 +1,422 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY linkin "http://www.semanticweb.org/socialnetwork/linkin#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/socialnetwork/linkin#"
+     xml:base="http://www.semanticweb.org/socialnetwork/linkin"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:linkin="http://www.semanticweb.org/socialnetwork/linkin#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/socialnetwork/linkin#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#has_activity -->
+
+    <owl:ObjectProperty rdf:about="&linkin;has_activity">
+        <rdfs:range rdf:resource="&linkin;Activity"/>
+        <rdfs:domain rdf:resource="&linkin;Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#has_background -->
+
+    <owl:ObjectProperty rdf:about="&linkin;has_background">
+        <rdfs:range rdf:resource="&linkin;Background"/>
+        <rdfs:domain rdf:resource="&linkin;Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#has_connection -->
+
+    <owl:ObjectProperty rdf:about="&linkin;has_connection">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="&linkin;Name"/>
+        <rdfs:range rdf:resource="&linkin;Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#has_contact -->
+
+    <owl:ObjectProperty rdf:about="&linkin;has_contact">
+        <rdfs:range rdf:resource="&linkin;ContactInfo"/>
+        <rdfs:domain rdf:resource="&linkin;Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#has_following -->
+
+    <owl:ObjectProperty rdf:about="&linkin;has_following">
+        <rdfs:domain rdf:resource="&linkin;Name"/>
+        <rdfs:range rdf:resource="&linkin;Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#has_groups -->
+
+    <owl:ObjectProperty rdf:about="&linkin;has_groups">
+        <rdfs:range rdf:resource="&linkin;Groups"/>
+        <rdfs:domain rdf:resource="&linkin;Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#has_photo -->
+
+    <owl:ObjectProperty rdf:about="&linkin;has_photo">
+        <rdfs:domain rdf:resource="&linkin;Name"/>
+        <rdfs:range rdf:resource="&linkin;Photo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#has_potential_connection -->
+
+    <owl:ObjectProperty rdf:about="&linkin;has_potential_connection">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="&linkin;Name"/>
+        <rdfs:range rdf:resource="&linkin;Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#has_status -->
+
+    <owl:ObjectProperty rdf:about="&linkin;has_status">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&linkin;Name"/>
+        <rdfs:range rdf:resource="&linkin;Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#String -->
+
+    <owl:DatatypeProperty rdf:about="&linkin;String">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Activity -->
+
+    <owl:Class rdf:about="&linkin;Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Address -->
+
+    <owl:Class rdf:about="&linkin;Address">
+        <rdfs:subClassOf rdf:resource="&linkin;ContactInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Background -->
+
+    <owl:Class rdf:about="&linkin;Background"/>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#ContactInfo -->
+
+    <owl:Class rdf:about="&linkin;ContactInfo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Education -->
+
+    <owl:Class rdf:about="&linkin;Education">
+        <rdfs:subClassOf rdf:resource="&linkin;Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Email -->
+
+    <owl:Class rdf:about="&linkin;Email">
+        <rdfs:subClassOf rdf:resource="&linkin;ContactInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Groups -->
+
+    <owl:Class rdf:about="&linkin;Groups"/>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Name -->
+
+    <owl:Class rdf:about="&linkin;Name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Phone -->
+
+    <owl:Class rdf:about="&linkin;Phone">
+        <rdfs:subClassOf rdf:resource="&linkin;ContactInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Photo -->
+
+    <owl:Class rdf:about="&linkin;Photo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Skill&amp;Experience -->
+
+    <owl:Class rdf:about="&linkin;Skill&amp;Experience">
+        <rdfs:subClassOf rdf:resource="&linkin;Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Status -->
+
+    <owl:Class rdf:about="&linkin;Status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Build_Linkin -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Build_Linkin">
+        <rdf:type rdf:resource="&linkin;Activity"/>
+        <String rdf:datatype="&xsd;string"></String>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#C++ -->
+
+    <owl:NamedIndividual rdf:about="&linkin;C++">
+        <rdf:type rdf:resource="&linkin;Skill&amp;Experience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Chinese_Academy_of_Science -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Chinese_Academy_of_Science">
+        <rdf:type rdf:resource="&linkin;Education"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Columbia_University -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Columbia_University">
+        <rdf:type rdf:resource="&linkin;Education"/>
+        <String rdf:datatype="&xsd;string"></String>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Find_Job -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Find_Job">
+        <rdf:type rdf:resource="&linkin;Activity"/>
+        <String rdf:datatype="&xsd;string"></String>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Google -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Google">
+        <rdf:type rdf:resource="&linkin;Groups"/>
+        <String></String>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Jerry -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Jerry">
+        <rdf:type rdf:resource="&linkin;Name"/>
+        <has_background rdf:resource="&linkin;Columbia_University"/>
+        <has_groups rdf:resource="&linkin;Google"/>
+        <has_status rdf:resource="&linkin;Professor"/>
+        <has_potential_connection rdf:resource="&linkin;Tom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Kaili&apos;s_activity_1 -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Kaili&apos;s_activity_1">
+        <rdf:type rdf:resource="&linkin;Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Kaili&apos;s_activity_2 -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Kaili&apos;s_activity_2">
+        <rdf:type rdf:resource="&linkin;Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Kaili&apos;s_email -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Kaili&apos;s_email">
+        <rdf:type rdf:resource="&linkin;Email"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Kaili&apos;s_photo -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Kaili&apos;s_photo">
+        <rdf:type rdf:resource="&linkin;Photo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Kaili_Zhang -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Kaili_Zhang">
+        <rdf:type rdf:resource="&linkin;Name"/>
+        <has_background rdf:resource="&linkin;Chinese_Academy_of_Science"/>
+        <has_background rdf:resource="&linkin;Columbia_University"/>
+        <has_groups rdf:resource="&linkin;Google"/>
+        <has_potential_connection rdf:resource="&linkin;Jerry"/>
+        <has_activity rdf:resource="&linkin;Kaili&apos;s_activity_1"/>
+        <has_activity rdf:resource="&linkin;Kaili&apos;s_activity_2"/>
+        <has_contact rdf:resource="&linkin;Kaili&apos;s_email"/>
+        <has_photo rdf:resource="&linkin;Kaili&apos;s_photo"/>
+        <has_status rdf:resource="&linkin;Student"/>
+        <has_following rdf:resource="&linkin;Tom"/>
+        <has_background rdf:resource="&linkin;Xiamen_University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Professor -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Professor">
+        <rdf:type rdf:resource="&linkin;Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Python -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Python">
+        <rdf:type rdf:resource="&linkin;Skill&amp;Experience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Student -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Student">
+        <rdf:type rdf:resource="&linkin;Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Tom -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Tom">
+        <rdf:type rdf:resource="&linkin;Name"/>
+        <has_activity rdf:resource="&linkin;Build_Linkin"/>
+        <has_background rdf:resource="&linkin;C++"/>
+        <has_background rdf:resource="&linkin;Columbia_University"/>
+        <has_activity rdf:resource="&linkin;Find_Job"/>
+        <has_connection rdf:resource="&linkin;Kaili_Zhang"/>
+        <has_status rdf:resource="&linkin;Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Xiamen_University -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Xiamen_University">
+        <rdf:type rdf:resource="&linkin;Education"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/linkin#Yahoo -->
+
+    <owl:NamedIndividual rdf:about="&linkin;Yahoo">
+        <rdf:type rdf:resource="&linkin;Groups"/>
+        <has_background rdf:resource="&linkin;Google"/>
+        <has_contact rdf:resource="&linkin;Google"/>
+        <has_photo rdf:resource="&linkin;Google"/>
+        <has_status rdf:resource="&linkin;Google"/>
+        <has_connection rdf:resource="&linkin;Google"/>
+        <has_activity rdf:resource="&linkin;Google"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

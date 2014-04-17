@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY facebook "http://www.semanticweb.org/socialnetwork/facebook#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/socialnetwork/facebook#"
+     xml:base="http://www.semanticweb.org/socialnetwork/facebook"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:facebook="http://www.semanticweb.org/socialnetwork/facebook#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/socialnetwork/facebook#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#has_Affair -->
+
+    <owl:ObjectProperty rdf:about="&facebook;has_Affair">
+        <rdfs:range rdf:resource="&facebook;Affair"/>
+        <rdfs:domain rdf:resource="&facebook;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#has_about -->
+
+    <owl:ObjectProperty rdf:about="&facebook;has_about">
+        <rdfs:range rdf:resource="&facebook;About"/>
+        <rdfs:domain rdf:resource="&facebook;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#has_friends -->
+
+    <owl:ObjectProperty rdf:about="&facebook;has_friends">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="&facebook;Person"/>
+        <rdfs:range rdf:resource="&facebook;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#has_movie -->
+
+    <owl:ObjectProperty rdf:about="&facebook;has_movie">
+        <rdfs:range rdf:resource="&facebook;Movie"/>
+        <rdfs:domain rdf:resource="&facebook;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#has_music -->
+
+    <owl:ObjectProperty rdf:about="&facebook;has_music">
+        <rdfs:range rdf:resource="&facebook;Music"/>
+        <rdfs:domain rdf:resource="&facebook;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#has_photo -->
+
+    <owl:ObjectProperty rdf:about="&facebook;has_photo">
+        <rdfs:range rdf:resource="&facebook;Photo"/>
+        <rdfs:domain rdf:resource="&facebook;Photo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#About -->
+
+    <owl:Class rdf:about="&facebook;About"/>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Affair -->
+
+    <owl:Class rdf:about="&facebook;Affair"/>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Movie -->
+
+    <owl:Class rdf:about="&facebook;Movie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Music -->
+
+    <owl:Class rdf:about="&facebook;Music"/>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Person -->
+
+    <owl:Class rdf:about="&facebook;Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Photo -->
+
+    <owl:Class rdf:about="&facebook;Photo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Affair_1 -->
+
+    <owl:NamedIndividual rdf:about="&facebook;Affair_1">
+        <rdf:type rdf:resource="&facebook;Affair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Affair_two -->
+
+    <owl:NamedIndividual rdf:about="&facebook;Affair_two">
+        <rdf:type rdf:resource="&facebook;Affair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Carrie -->
+
+    <owl:NamedIndividual rdf:about="&facebook;Carrie">
+        <rdf:type rdf:resource="&facebook;Person"/>
+        <has_Affair rdf:resource="&facebook;Affair_two"/>
+        <has_about rdf:resource="&facebook;Carrie&apos;s_email"/>
+        <has_photo rdf:resource="&facebook;Carrie&apos;s_photo"/>
+        <has_about rdf:resource="&facebook;ColumbiaUniversity"/>
+        <has_about rdf:resource="&facebook;GonewithThewind"/>
+        <has_movie rdf:resource="&facebook;KingKong"/>
+        <has_friends rdf:resource="&facebook;Tom"/>
+        <has_about rdf:resource="&facebook;XiamenUniversity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Carrie&apos;s_email -->
+
+    <owl:NamedIndividual rdf:about="&facebook;Carrie&apos;s_email">
+        <rdf:type rdf:resource="&facebook;About"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Carrie&apos;s_photo -->
+
+    <owl:NamedIndividual rdf:about="&facebook;Carrie&apos;s_photo">
+        <rdf:type rdf:resource="&facebook;About"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#ColumbiaUniversity -->
+
+    <owl:NamedIndividual rdf:about="&facebook;ColumbiaUniversity">
+        <rdf:type rdf:resource="&facebook;About"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#GonewithThewind -->
+
+    <owl:NamedIndividual rdf:about="&facebook;GonewithThewind">
+        <rdf:type rdf:resource="&facebook;Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#KingKong -->
+
+    <owl:NamedIndividual rdf:about="&facebook;KingKong">
+        <rdf:type rdf:resource="&facebook;Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#SpiderMan -->
+
+    <owl:NamedIndividual rdf:about="&facebook;SpiderMan">
+        <rdf:type rdf:resource="&facebook;Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Tom -->
+
+    <owl:NamedIndividual rdf:about="&facebook;Tom">
+        <rdf:type rdf:resource="&facebook;Person"/>
+        <has_Affair rdf:resource="&facebook;Affair_1"/>
+        <has_about rdf:resource="&facebook;ColumbiaUniversity"/>
+        <has_movie rdf:resource="&facebook;GonewithThewind"/>
+        <has_movie rdf:resource="&facebook;SpiderMan"/>
+        <has_about rdf:resource="&facebook;Tom&apos;s_phone"/>
+        <has_about rdf:resource="&facebook;Tom&apos;s_photo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Tom&apos;s_phone -->
+
+    <owl:NamedIndividual rdf:about="&facebook;Tom&apos;s_phone">
+        <rdf:type rdf:resource="&facebook;About"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#Tom&apos;s_photo -->
+
+    <owl:NamedIndividual rdf:about="&facebook;Tom&apos;s_photo">
+        <rdf:type rdf:resource="&facebook;About"/>
+        <rdf:type rdf:resource="&facebook;Photo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/socialnetwork/facebook#XiamenUniversity -->
+
+    <owl:NamedIndividual rdf:about="&facebook;XiamenUniversity">
+        <rdf:type rdf:resource="&facebook;About"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
