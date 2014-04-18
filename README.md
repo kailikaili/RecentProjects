@@ -4,6 +4,19 @@ Most of them are courses'projects that do not contain any research elements.
 Thoese codes are only used to show some ideas. Please do not copy them for other use. 
 
 
+## MTS -- Machine Translation Selection
+This is the engineering part of a research project. All data and some research toolkits are hidden. 
+* JavaScript, Python, Shell
+* An Online Website providing machine translation and selection service. It will also provide the analysis procedure of selection.
+* angcard.py is the main algorithm code.
+* I used python to call JS, shell, tools and models.
+
+## ML -- Machine Learning
+
+* This part, I put a course research project paper here.
+* The data comes from a competition on Kaggle.org.
+* It's about Gender Identification from Handwriting.
+
 ## Game -- AI -- Artificial Intelligence
 
 ### Sokoban
@@ -46,6 +59,10 @@ Thoese codes are only used to show some ideas. Please do not copy them for other
 ### Translator
 * Python
 
+### Advanced Tagger
+* Python
+* More local and global features are added.
+* Linear Regression Model.
 
 
 ## SET -- Search Engine Technology

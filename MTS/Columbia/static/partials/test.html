@@ -1,0 +1,14 @@
+<table>
+<tbody>
+                    <span  ng-repeat="r in r_dependency.data">
+			<div ng-repeat="some in r">
+			<p>{{some.engine}}</p>
+                        <tr><td colspan=4>Source sentence: {{ CN }}</td></tr>
+			
+                        <tr><td colspan=4>{{r.engine}}: {{ translation[r.engine] }}</td></tr>
+                                        
+				
+			</div>
+                    </span>
+                </tbody>
+</table>

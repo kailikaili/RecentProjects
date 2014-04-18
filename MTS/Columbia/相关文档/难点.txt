@@ -1,0 +1,5 @@
+peewee:
+    不支持server_default
+
+sqlalchemy:
+    太复杂
