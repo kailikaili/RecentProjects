@@ -2,6 +2,9 @@
 This document includes some projects completed in last year. 
 Most of them are courses'projects that do not contain any research elements.
 Thoese codes are only used to show some ideas. Please do not copy them for other use. 
+@Author: ME
+@Copyright: ME
+If you have any question, please contact sunny_0827@126.com .
 
 
 ## MTS -- Machine Translation Selection
@@ -12,7 +15,7 @@ This is the engineering part of a research project. All data and some research t
 * I used python to call JS, shell, tools and models.
 
 ## ML -- Machine Learning
-
+* Matlab
 * This part, I put a course research project paper here.
 * The data comes from a competition on Kaggle.org.
 * It's about Gender Identification from Handwriting.
