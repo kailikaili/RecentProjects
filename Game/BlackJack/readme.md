@@ -18,4 +18,4 @@ If you have any questions, please contact sunny_0827@126.com
 
 ## Functions Under Going:
 ### Assistant
-    I've implemented this kind of assistant to help you calculate the probabilities for each players to win before you make a move. Hoever, I don't have time to replant it here.
+* I've implemented this kind of assistant to help you calculate the probabilities for each players to win before you make a move. Hoever, I don't have time to replant it here.
